@@ -1,0 +1,224 @@
+---
+title: "An easy and friendly way to build your multilingual website"
+author: "Pamela E. Pairo, PhD"
+output:
+  xaringan::moon_reader:
+    css: 
+      - css/mytheme.css
+      - css/mytheme-font.css
+    lib_dir: libs
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: googlecode
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+---
+
+```{r setup, include = FALSE}
+options(htmltools.dir.version = FALSE)
+library(knitr)
+library(tidyverse)
+library(xaringanExtra)
+# set default options
+opts_chunk$set(echo=FALSE,
+               collapse = TRUE,
+               fig.width = 7.252,
+               fig.height = 4,
+               dpi = 300)
+xaringanExtra::use_tile_view()
+xaringanExtra::use_panelset()
+xaringanExtra::use_clipboard()
+xaringanExtra::use_webcam()
+xaringanExtra::use_broadcast()
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket")
+)
+
+```
+
+class: title-slide, center, top
+background-image: url(images/frame.jpg)
+background-size: cover
+
+.right-column[
+# `r rmarkdown::metadata$title`
+### `r rmarkdown::metadata$subtitle`
+
+**`r rmarkdown::metadata$author`**<br>
+`r rmarkdown::metadata$date`
+]
+
+.palegrey[.left[.footnote[Graphic by [chanyutto chim](https://www.rawpixel.com/image/2431441/free-photo-image-wallpaper-abstract-texture)]]]
+
+???
+
+---
+class: inverse, middle, center
+
+# Why do you need a personal website?
+
+---
+
+# Some benefits
+
+- Another way to practice your communication skills
+
+--
+
+- Exchange with colleagues and expansion of your networking
+
+--
+
+- Dissemination of your jobs and skills
+
+--
+
+- The errors and doubts that arise and how to solve them can be very useful for the rest of the community
+
+--
+
+- A platform to connect with the world. 
+
+---
+background-image: url(images/language.jpg)
+background-size: cover
+class: center, middle, inverse
+
+##.my-hot-DarkBlue[A multilingual website]
+##.my-hot-DarkBlue[overcomes]
+#.my-hot-DarkBlue[potential cultural barriers]
+
+.palegrey[.left[.footnote[Graphic by [Hannah Wright](https://unsplash.com/s/photos/language?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText")]]]
+
+---
+#Scheme proposed
+
+<img src="images/scheme.png" width="90%"/>
+
+---
+background-image: url(images/laptop.jpg)
+background-size: contain
+class: center, top
+
+#Let's do it!!
+
+.palegrey[.left[.footnote[Graphic by [Sincerely Media](https://unsplash.com/@sincerelymedia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)]]]
+
+---
+
+class: inverse, middle, center
+# Making a bilingual website
+
+---
+##In _languages.toml_
+
+``` code
+[en]
+  languageCode = "en-us"
+  contentDir = "content/en"  # Uncomment for multi-lingual sites,and move English content into `en` sub-folder.
+  title = "English site"
+# Uncomment the lines below to configure your website in a second language.
+[es]
+ languageCode = "es"
+ contentDir = "content/es"
+  title = "Sitio en español"
+
+  [es.params]
+   description = "Sitio en español"
+  [[es.menu.main]]
+    name = "es"
+    url = "#about"
+    weight = 1
+```
+---
+# Then
+
+Create 2 files: **menus.es.toml** and       **menus.en.toml** 
+
+--
+
+In **config.toml**, we can choose the default lenguage. For example, if we want that our page in spanish _defaultContentLanguage = “es"_
+
+--
+
+To make visible that the webpage is bilingual, it is convenient to go to **params.toml** and verify that the _show_language=TRUE_
+
+<img src="images/params.png" width="100%"/>
+
+---
+class: inverse, middle, center
+
+# Let's deploy the website!!
+
+---
+# Hugo version
+
+Put _**netlify.toml**_ in the project's base folder. In this file we must specify the version of Hugo used.
+
+```{r, eval=TRUE, echo=TRUE}
+
+blogdown::hugo_version()
+
+```
+
+And the _**netlify.toml**_ must be like this:
+
+```{r, eval= FALSE, echo=TRUE}
+
+[build.environment]
+  HUGO_VERSION = "0.78.1" #Here is the hugo version
+  HUGO_ENABLEGITINFO = "true"
+
+```
+---
+
+#In Netlify
+
+_New site from Git > GitHub_
+
+<img src="images/netlify2.png" width="100%"/>
+
+---
+
+#In Netlify
+
+In _Show advanced_ write the Hugo version.
+
+<img src="images/netlify3.png" width="100%"/>
+---
+#More information:
+
+- 
+
+---
+background-image: url(images/picture.jpg) 
+background-size: cover
+class: center, bottom, inverse
+
+# Spread your website to the world!
+
+.palegrey[.left[.footnote[Graphic by [Clem Onojeghuo](https://unsplash.com/@clemono)]]]
+
+---
+class: goodbye-slide, inverse, middle, center
+
+## Thank you!!
+
+.pull-left[
+<img style="border-radius: 80%;" src="images/pairo.png" width="170px"/>
+
+
+### Find me...
+
+.center[ `r icon::fa("link")`
+[pamepairo.netlify.app](https://pamepairo.netlify.app/)<br/>
+`r icon::fa("twitter")`[pamepairo](https://twitter.com/PamePairo)<br/>
+`r icon::fa("github")`[PamePairo](https://github.com/PamelaPairo)<br/>
+]]
