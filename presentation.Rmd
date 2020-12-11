@@ -73,15 +73,11 @@ class: inverse, middle, center
 
 --
 
-`r emo::ji("heavy_check_mark")`  Exchange with colleagues and expansion of your networking
+`r emo::ji("heavy_check_mark")`  Exchange knowledge with colleagues and expansion of your networking
 
 --
 
-`r emo::ji("heavy_check_mark")`  Dissemination of your jobs and skills
-
---
-
-`r emo::ji("heavy_check_mark")`  The errors and doubts that arise and how to solve them can be very useful for the rest of the community
+`r emo::ji("heavy_check_mark")`  The errors and doubts that arise and how to solve them can be useful for the rest of the community
 
 --
 
