@@ -32,7 +32,6 @@ opts_chunk$set(echo=FALSE,
                fig.height = 4,
                dpi = 300)
 xaringanExtra::use_tile_view()
-xaringanExtra::use_panelset()
 xaringanExtra::use_clipboard()
 xaringanExtra::use_webcam()
 xaringanExtra::use_broadcast()
@@ -104,7 +103,7 @@ class: center, top
 ---
 # Building a website
 
-.center[<img src="images/scheme.png" width="85%"/>]
+<img src="images/scheme1.png" width="100%"/>
 
 ---
 
@@ -121,7 +120,7 @@ class: center, top
 ```
 + _**params.toml**_: _theme_. Contact details (email, working address, twitter, GitHub, ResearchGate).
 
-+ _**menus.toml**_: opciones del menú de navegación (Notas, Proyectos, Cursos, Publicaciones, etc). 
++ _**menus.toml**_: Navigation menu bar 
 
 + _**languages.toml**_: set up language/s
 
@@ -152,6 +151,7 @@ class: inverse, middle, center
     weight = 1
 ```
 ---
+Rename _menus.toml_
 
 ```
 `r emo::ji("folder")`── config/default
@@ -171,16 +171,24 @@ Create one folder for each language
     
 ```
 ---
-# Then
+# Choose the default language
 
 
-In **config.toml**, we can choose the default lenguage. For example, if we want that our page in spanish _defaultContentLanguage = “es"_
+In **config.toml**
+
+For example, if we want that our page in spanish _defaultContentLanguage = “es"_
 
 --
 
-To show that the personal website is multilingual, it is convenient to go to **params.toml** and verify that the _show_language= TRUE_
+To show that the personal website is multilingual, check in _params.toml_ and verify that the _show_language= TRUE_
 
 <img src="images/params.png" width="100%"/>
+
+---
+
+# Building a website
+
+.center[<img src="images/scheme.png" width="85%"/>]
 
 ---
 class: inverse, middle, center
@@ -222,6 +230,16 @@ _New site from Git > GitHub_
 In _Show advanced_ write the Hugo version.
 
 <img src="images/netlify3.png" width="100%"/>
+
+---
+background-image: url(images/picture.jpg) 
+background-size: cover
+class: center, bottom, inverse
+
+# Spread your website to the world!
+
+.palegrey[.left[.footnote[Graphic by [Clem Onojeghuo](https://unsplash.com/@clemono)]]]
+
 ---
 # Learn more:
 
@@ -234,15 +252,6 @@ In _Show advanced_ write the Hugo version.
 - [**¿Porqué necesitas tener una página web personal?**](https://pamepairo.netlify.app/post/7-12-2020-motivos-pagina-web/)
 
 - Creando una página web bilinguee
-
----
-background-image: url(images/picture.jpg) 
-background-size: cover
-class: center, bottom, inverse
-
-# Spread your website to the world!
-
-.palegrey[.left[.footnote[Graphic by [Clem Onojeghuo](https://unsplash.com/@clemono)]]]
 
 ---
 class: goodbye-slide, inverse, middle, center
