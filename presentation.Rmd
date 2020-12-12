@@ -86,25 +86,11 @@ background-image: url(images/language.jpg)
 background-size: cover
 class: center, middle, inverse
 
-##.my-hot-DarkBlue[A multilingual website]
-##.my-hot-DarkBlue[overcomes]
-#.my-hot-DarkBlue[potential cultural barriers]
+##.my-hot-DarkBlue[Overcoming]
+##.my-hot-DarkBlue[language barriers with]
+#.my-hot-DarkBlue[a multilingual website]
 
 .palegrey[.left[.footnote[Graphic by [Hannah Wright](https://unsplash.com/s/photos/language?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText")]]]
-
----
-# Building a website
-
-.center[<img src="images/scheme.png" width="85%"/>]
-
----
-class: center, middle
-
-# Blogdown
-
-```r 
-devtools::install_github("rstudio/blogdown")
-```
 
 ---
 background-image: url(images/laptop.jpg)
@@ -114,6 +100,30 @@ class: center, top
 #Let's do it!!
 
 .palegrey[.left[.footnote[Graphic by [Sincerely Media](https://unsplash.com/@sincerelymedia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)]]]
+
+---
+# Building a website
+
+.center[<img src="images/scheme.png" width="85%"/>]
+
+---
+
+# Blogdown + Hugo
+
+```
+├── config.toml            
+`r emo::ji("folder")`── config/default
+   ├── menus.toml     
+   ├── params.toml    
+   └── languages.toml
+`r emo::ji("folder")`── content
+`r emo::ji("folder")`── themes
+```
++ _**params.toml**_: _theme_. Contact details (email, working address, twitter, GitHub, ResearchGate).
+
++ _**menus.toml**_: opciones del menú de navegación (Notas, Proyectos, Cursos, Publicaciones, etc). 
+
++ _**languages.toml**_: set up language/s
 
 ---
 
@@ -142,17 +152,33 @@ class: inverse, middle, center
     weight = 1
 ```
 ---
+
+```
+`r emo::ji("folder")`── config/default
+   ├── menus.es.toml     <- For spanish
+   ├── menus.en.toml     <- For english
+   ├── params.toml    
+   └── language.toml    
+```
+--
+
+Create one folder for each language
+
+```
+`r emo::ji("folder")`── content
+   ├── `r emo::ji("folder")`- es     <- For spanish
+   ├── `r emo::ji("folder")`- en     <- For english
+    
+```
+---
 # Then
 
-Create 2 files: **menus.es.toml** and       **menus.en.toml** 
-
---
 
 In **config.toml**, we can choose the default lenguage. For example, if we want that our page in spanish _defaultContentLanguage = “es"_
 
 --
 
-To make visible that the webpage is bilingual, it is convenient to go to **params.toml** and verify that the _show_language=TRUE_
+To show that the personal website is multilingual, it is convenient to go to **params.toml** and verify that the _show_language= TRUE_
 
 <img src="images/params.png" width="100%"/>
 
@@ -197,9 +223,17 @@ In _Show advanced_ write the Hugo version.
 
 <img src="images/netlify3.png" width="100%"/>
 ---
-#More information:
+# Learn more:
 
-- 
++ [_**blogdown: Creating Websites with R Markdown**_](https://bookdown.org/yihui/blogdown/)  Yihui Xie, Amber Thomas, Alison Presmanes Hill
+
+- [**The Download**](https://alison.netlify.app/larug-download/#1) by Alison Hill
+
+- [**A Spoonful of Hugo: How much Hugo do I need to know?**](https://alison.rbind.io/post/2020-12-12-how-much-hugo/#you-want-to-customize-your-site) by Alison Hill
+
+- [**¿Porqué necesitas tener una página web personal?**](https://pamepairo.netlify.app/post/7-12-2020-motivos-pagina-web/)
+
+- Creando una página web bilingue
 
 ---
 background-image: url(images/picture.jpg) 
