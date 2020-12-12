@@ -12,7 +12,7 @@
 
 --DarkGreen:          #006747;
 --Green:              #009639;
---AquaGreen:          #00A499;
+--SeaGreen:          #3CB371;
 
 --Purple:             #330072;
 --DarkPink:           #7C2855;
@@ -23,6 +23,7 @@
 --my-blue:            #122140;
 --my-yellow:          #e5bf00;
 --my-gold:            #ae8f00;
+--my-violet:          #8A2BE2;
 
 --my-coral:          #903030;
 --my-red:            #600018;
@@ -31,9 +32,7 @@
 
 /*-- LINKS/ANCHORS --*/
 a {
-  color:              var(--my-coral);
-  border-bottom:      3px solid var(--my-coral);
-  line-height:        2rem;
+  color:              var(--SeaGreen);
 }
 
 a:hover { border-bottom: none; }
