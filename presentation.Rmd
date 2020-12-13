@@ -171,7 +171,7 @@ Create one folder for each language
     
 ```
 ---
-# Choose the default language
+## Choose the default language
 
 
 In **config.toml**
