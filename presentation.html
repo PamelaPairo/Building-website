@@ -100,12 +100,12 @@ class: center, top
 
 ```
 ├── config.toml            
-📂── config/default
+📁── config/default
    ├── menus.toml     
    ├── params.toml    
    └── languages.toml
 📂── content
-📁── themes
+📂── themes
 ```
 + _**params.toml**_: _theme_. Contact details (email, working address, twitter, GitHub, ResearchGate).
 
@@ -154,9 +154,9 @@ Rename _menus.toml_
 Create one folder for each language
 
 ```
-📁── content
-   ├── 📁- es     &lt;- For spanish
-   ├── 📂- en     &lt;- For english
+📂── content
+   ├── 📂- es     &lt;- For spanish
+   ├── 📁- en     &lt;- For english
     
 ```
 ---
@@ -187,7 +187,7 @@ class: inverse, middle, center
 ---
 # Hugo version
 
-Put _**netlify.toml**_ in the project's base folder. In this file we must specify the version of Hugo used.
+Put _netlify.toml_ in the project's base folder. In this file we must specify the Hugo version used.
 
 
 ```r
@@ -196,7 +196,7 @@ blogdown::hugo_version()
 ## [1] '0.78.1'
 ```
 
-And the _**netlify.toml**_ must be like this:
+And the _netlify.toml_ must be like this:
 
 
 ```r
@@ -242,7 +242,7 @@ class: center, bottom, inverse
 
 - [**¿Porqué necesitas tener una página web personal?**](https://pamepairo.netlify.app/post/7-12-2020-motivos-pagina-web/)
 
-- Creando una página web bilinguee
+- Creando una página web bilingüe
 
 ---
 class: goodbye-slide, inverse, middle, center

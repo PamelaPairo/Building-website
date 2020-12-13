@@ -21,7 +21,6 @@
 --Red:                #DA291C;
 
 --my-blue:            #122140;
---my-yellow:          #e5bf00;
 --my-gold:            #ae8f00;
 --my-violet:          #8A2BE2;
 
@@ -220,7 +219,6 @@ pre code {
 .warmyellow { color:  var(--WarmYellow) }
 .palegrey   { color:  var(--PaleGrey)}
 .my-blue    { color:  var(--my-blue) }
-.my-yellow  { color:  var(--my-yellow) }
 .my-gold    { color:  var(--my-gold)}
 .my-red     { color:  var(--my-red) }
 .my-coral   { color:  var(--my-coral) }
@@ -244,7 +242,7 @@ pre code {
 
 .remark-slide-number .progress-bar {
   height: 100%;
-  background-color: var(--my-yellow);
+  background-color: var(--DarkGreen);
 }
 
 /*-- EXPERIMENTAL -----------------------------------------------------------*/

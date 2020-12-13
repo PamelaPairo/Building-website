@@ -198,7 +198,7 @@ class: inverse, middle, center
 ---
 # Hugo version
 
-Put _**netlify.toml**_ in the project's base folder. In this file we must specify the version of Hugo used.
+Put _netlify.toml_ in the project's base folder. In this file we must specify the Hugo version used.
 
 ```{r, eval=TRUE, echo=TRUE}
 
@@ -206,7 +206,7 @@ blogdown::hugo_version()
 
 ```
 
-And the _**netlify.toml**_ must be like this:
+And the _netlify.toml_ must be like this:
 
 ```{r, eval= FALSE, echo=TRUE}
 
@@ -251,7 +251,7 @@ class: center, bottom, inverse
 
 - [**¿Porqué necesitas tener una página web personal?**](https://pamepairo.netlify.app/post/7-12-2020-motivos-pagina-web/)
 
-- Creando una página web bilinguee
+- Creando una página web bilingüe
 
 ---
 class: goodbye-slide, inverse, middle, center
