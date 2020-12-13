@@ -118,11 +118,11 @@ class: center, top
 `r emo::ji("folder")`── content
 `r emo::ji("folder")`── themes
 ```
-+ _**params.toml**_: _theme_. Contact details (email, working address, twitter, GitHub, ResearchGate).
++ _**params.toml**_: colour _theme_, font size, contact details (email, working address, twitter, GitHub, ResearchGate).
 
 + _**menus.toml**_: Navigation menu bar 
 
-+ _**languages.toml**_: set up language/s
++ _**languages.toml**_: language setting
 
 ---
 
@@ -130,7 +130,7 @@ class: inverse, middle, center
 # Making a bilingual website
 
 ---
-##In _languages.toml_
+### In _languages.toml_
 
 ``` code
 [en]
@@ -176,7 +176,7 @@ Create one folder for each language
 
 In **config.toml**
 
-For example, if we want that our page in spanish _defaultContentLanguage = “es"_
+For spanish website default:  _defaultContentLanguage = “es"_
 
 --
 
@@ -243,15 +243,17 @@ class: center, bottom, inverse
 ---
 # Learn more:
 
-+ [**blogdown: Creating Websites with R Markdown**](https://bookdown.org/yihui/blogdown/)  Yihui Xie, Amber Thomas, Alison Presmanes Hill
+- [**blogdown: Creating Websites with R Markdown**](https://bookdown.org/yihui/blogdown/)  Yihui Xie, Amber Thomas, Alison Presmanes Hill
 
 - [**The Download**](https://alison.netlify.app/larug-download/#1) by Alison Presmanes Hill
 
 - [**A Spoonful of Hugo: How much Hugo do I need to know?**](https://alison.rbind.io/post/2020-12-12-how-much-hugo/#you-want-to-customize-your-site) by Alison Presmanes Hill
 
+- [**Language abbreviations**](https://wowchemy.com/docs/language/)
+
 - [**¿Porqué necesitas tener una página web personal?**](https://pamepairo.netlify.app/post/7-12-2020-motivos-pagina-web/)
 
-- Creando una página web bilingüe
+- Creando una página web bilingüe con R
 
 ---
 class: goodbye-slide, inverse, middle, center
