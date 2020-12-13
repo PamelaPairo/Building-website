@@ -10,6 +10,7 @@ output:
     seal: false
     self_contained: true
     nature:
+      ratio: "16:9"
       highlightStyle: googlecode
       highlightLines: true
       countIncrementalSlides: false
@@ -33,7 +34,7 @@ opts_chunk$set(echo=FALSE,
                dpi = 300)
 xaringanExtra::use_tile_view()
 xaringanExtra::use_clipboard()
-xaringanExtra::use_webcam()
+xaringanExtra::use_webcam(width = 210, height = 220)
 xaringanExtra::use_broadcast()
 xaringanExtra::use_share_again()
 xaringanExtra::style_share_again(
@@ -93,7 +94,7 @@ class: center, middle, inverse
 
 ---
 background-image: url(images/laptop.jpg)
-background-size: contain
+background-size: cover
 class: center, top
 
 #Let's do it!!

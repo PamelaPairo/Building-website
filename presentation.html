@@ -11,7 +11,7 @@
     <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
     <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
     <script src="libs/xaringanExtra-webcam/webcam.js"></script>
-    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"210","height":"220","margin":"1em"}</script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <script src="libs/peerjs/peerjs.min.js"></script>
     <script src="libs/tiny.toast/toast.min.js"></script>
@@ -82,7 +82,7 @@ class: center, middle, inverse
 
 ---
 background-image: url(images/laptop.jpg)
-background-size: contain
+background-size: cover
 class: center, top
 
 #Let's do it!!
@@ -105,7 +105,7 @@ class: center, top
    ├── params.toml    
    └── languages.toml
 📁── content
-📂── themes
+📁── themes
 ```
 + _**params.toml**_: colour _theme_, font size, contact details (email, working address, twitter, GitHub, ResearchGate).
 
@@ -143,7 +143,7 @@ class: inverse, middle, center
 Rename _menus.toml_
 
 ```
-📂── config/default
+📁── config/default
    ├── menus.es.toml     &lt;- For spanish
    ├── menus.en.toml     &lt;- For english
    ├── params.toml    
@@ -155,7 +155,7 @@ Create one folder for each language
 
 ```
 📁── content
-   ├── 📁- es     &lt;- For spanish
+   ├── 📂- es     &lt;- For spanish
    ├── 📁- en     &lt;- For english
     
 ```
@@ -266,6 +266,7 @@ class: goodbye-slide, inverse, middle, center
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
+"ratio": "16:9",
 "highlightStyle": "googlecode",
 "highlightLines": true,
 "countIncrementalSlides": false,
