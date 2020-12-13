@@ -83,11 +83,11 @@ class: center, middle, inverse
 ---
 background-image: url(images/laptop.jpg)
 background-size: cover
-class: center, top
+class: bottom, center
 
 #Let's do it!!
 
-.palegrey[.left[.footnote[Graphic by [Sincerely Media](https://unsplash.com/@sincerelymedia?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)]]]
+.palegrey[.right[.footnote[Graphic by [Sincerely Media](https://unsplash.com/@sincerelymedia?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)]]]
 
 ---
 # Building a website
@@ -100,11 +100,11 @@ class: center, top
 
 ```
 ├── config.toml       &lt;- Metadata of the website
-📁── config/default
+📂── config/default
    ├── menus.toml     
    ├── params.toml    
    └── languages.toml
-📁── content
+📂── content
 📁── themes
 ```
 + _**params.toml**_: colour _theme_, font size, contact details (email, working address, twitter, GitHub, ResearchGate).
@@ -154,8 +154,8 @@ Rename _menus.toml_
 Create one folder for each language
 
 ```
-📁── content
-   ├── 📂- es     &lt;- For spanish
+📂── content
+   ├── 📁- es     &lt;- For spanish
    ├── 📁- en     &lt;- For english
     
 ```
@@ -177,7 +177,7 @@ To show that the personal website is multilingual, check in _params.toml_ and ve
 
 # Building a website
 
-.center[&lt;img src="images/scheme.png" width="85%"/&gt;]
+.center[&lt;img src="images/scheme.png" width="70%"/&gt;]
 
 ---
 class: inverse, middle, center
@@ -187,7 +187,7 @@ class: inverse, middle, center
 ---
 # Hugo version
 
-Put _netlify.toml_ in the project's base folder. In this file we must specify the Hugo version used.
+#Put _netlify.toml_ in your project root directory and specify the Hugo version used.
 
 
 ```r
@@ -196,7 +196,7 @@ blogdown::hugo_version()
 ## [1] '0.78.1'
 ```
 
-And the _netlify.toml_ must be like this:
+#And the _netlify.toml_ must be like this:
 
 
 ```r
@@ -212,7 +212,7 @@ And the _netlify.toml_ must be like this:
 
 _New site from Git &gt; GitHub_
 
-&lt;img src="images/netlify2.png" width="100%"/&gt;
+.center[&lt;img src="images/netlify2.png" width="80%"/&gt;]
 
 ---
 
@@ -220,7 +220,7 @@ _New site from Git &gt; GitHub_
 
 In _Show advanced_ write the Hugo version.
 
-&lt;img src="images/netlify3.png" width="100%"/&gt;
+.center[&lt;img src="images/netlify3.png" width="80%"/&gt;]
 
 ---
 background-image: url(images/picture.jpg) 
@@ -232,13 +232,36 @@ class: center, bottom, inverse
 .palegrey[.left[.footnote[Graphic by [Clem Onojeghuo](https://unsplash.com/@clemono)]]]
 
 ---
+#In the latest version of Blogdown
+
+## Set the Hugo version
+
+
+```r
+library(blogdown)
+hugo_version()
+## [1] '0.78.1'
+```
+
+``` Hugo
+config_Rprofile() #set the HUGO VERSION
+```
+--
+
+## Tell to Netlify
+
+```Netlify
+config_netlify() 
+```
+
+---
 # Learn more:
 
 - [**blogdown: Creating Websites with R Markdown**](https://bookdown.org/yihui/blogdown/)  Yihui Xie, Amber Thomas, Alison Presmanes Hill
 
-- [**The Download**](https://alison.netlify.app/larug-download/#1) by Alison Presmanes Hill
+- [**The Download**](https://alison.netlify.app/larug-download/#1) Alison Presmanes Hill
 
-- [**A Spoonful of Hugo: How much Hugo do I need to know?**](https://alison.rbind.io/post/2020-12-12-how-much-hugo/#you-want-to-customize-your-site) by Alison Presmanes Hill
+- [**A Spoonful of Hugo: How much Hugo do I need to know?**](https://alison.rbind.io/post/2020-12-12-how-much-hugo/#you-want-to-customize-your-site) Alison Presmanes Hill
 
 - [**Language abbreviations**](https://wowchemy.com/docs/language/)
 
