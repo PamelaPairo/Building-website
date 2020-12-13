@@ -110,7 +110,7 @@ class: center, top
 # Blogdown + Hugo
 
 ```
-├── config.toml            
+├── config.toml       <- Metadata of the website
 `r emo::ji("folder")`── config/default
    ├── menus.toml     
    ├── params.toml    
@@ -245,9 +245,9 @@ class: center, bottom, inverse
 
 + [**blogdown: Creating Websites with R Markdown**](https://bookdown.org/yihui/blogdown/)  Yihui Xie, Amber Thomas, Alison Presmanes Hill
 
-- [**The Download**](https://alison.netlify.app/larug-download/#1) by Alison Hill
+- [**The Download**](https://alison.netlify.app/larug-download/#1) by Alison Presmanes Hill
 
-- [**A Spoonful of Hugo: How much Hugo do I need to know?**](https://alison.rbind.io/post/2020-12-12-how-much-hugo/#you-want-to-customize-your-site) by Alison Hill
+- [**A Spoonful of Hugo: How much Hugo do I need to know?**](https://alison.rbind.io/post/2020-12-12-how-much-hugo/#you-want-to-customize-your-site) by Alison Presmanes Hill
 
 - [**¿Porqué necesitas tener una página web personal?**](https://pamepairo.netlify.app/post/7-12-2020-motivos-pagina-web/)
 
