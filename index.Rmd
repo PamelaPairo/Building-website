@@ -75,7 +75,7 @@ class: inverse, middle, center
 
 --
 
-`r emo::ji("heavy_check_mark")`  The errors and doubts that arise and how to solve them can be useful for the rest of the community
+`r emo::ji("heavy_check_mark")`  The mistakes and doubts that arise and how to solve them can be useful for the community
 
 --
 
@@ -104,7 +104,7 @@ class: bottom, center
 ---
 # Building a website
 
-<img src="images/scheme1.png" width="100%"/>
+<img src="images/scheme1.png" width="90%"/>
 
 ---
 
@@ -194,7 +194,7 @@ To show that the personal website is multilingual, check in _params.toml_ and ve
 ---
 class: inverse, middle, center
 
-# Let's deploy the website!!
+# Deploying in Netlify
 
 ---
 # Hugo version
@@ -244,7 +244,7 @@ class: center, bottom, inverse
 ---
 #In the latest version of Blogdown
 
-## Set the Hugo version
+Set the Hugo version
 
 ```{r, eval=TRUE, echo=TRUE}
 library(blogdown)
@@ -256,7 +256,7 @@ config_Rprofile() #set the HUGO VERSION
 ```
 --
 
-## Tell to Netlify
+Tell to Netlify
 
 ```Netlify
 config_netlify() 
