@@ -199,7 +199,7 @@ class: inverse, middle, center
 ---
 # Hugo version
 
-#Put _netlify.toml_ in your project root directory and specify the Hugo version used.
+Put _netlify.toml_ in your project root directory and specify the Hugo version used.
 
 ```{r, eval=TRUE, echo=TRUE}
 
@@ -207,7 +207,7 @@ blogdown::hugo_version()
 
 ```
 
-#And the _netlify.toml_ must be like this:
+And the _netlify.toml_ must be like this:
 
 ```{r, eval= FALSE, echo=TRUE}
 
