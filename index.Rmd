@@ -255,7 +255,7 @@ config_netlify()
 ---
 background-image: url(images/picture.jpg) 
 background-size: cover
-class: center, bottom, inverse
+class: left, bottom, inverse
 
 # Spread your website to the world!
 
