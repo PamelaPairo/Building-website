@@ -181,7 +181,7 @@ For spanish website default:  _defaultContentLanguage = “es"_
 
 --
 
-To show that the personal website is multilingual, check in _params.toml_ and verify that the _show_language= TRUE_
+To show that the personal website is multilingual, check in _params.toml_ and verify that _show_language= TRUE_
 
 <img src="images/params.png" width="100%"/>
 
