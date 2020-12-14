@@ -233,15 +233,6 @@ In _Show advanced_ write the Hugo version.
 .center[<img src="images/netlify3.png" width="80%"/>]
 
 ---
-background-image: url(images/picture.jpg) 
-background-size: cover
-class: center, bottom, inverse
-
-# Spread your website to the world!
-
-.palegrey[.left[.footnote[Graphic by [Clem Onojeghuo](https://unsplash.com/@clemono)]]]
-
----
 #In the latest version of Blogdown
 
 Set the Hugo version
@@ -261,6 +252,14 @@ Tell to Netlify
 ```Netlify
 config_netlify() 
 ```
+---
+background-image: url(images/picture.jpg) 
+background-size: cover
+class: center, bottom, inverse
+
+# Spread your website to the world!
+
+.palegrey[.left[.footnote[Graphic by [Clem Onojeghuo](https://unsplash.com/@clemono)]]]
 
 ---
 # Learn more:
