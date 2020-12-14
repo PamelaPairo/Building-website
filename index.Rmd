@@ -75,7 +75,7 @@ class: inverse, middle, center
 
 --
 
-`r emo::ji("heavy_check_mark")`  The mistakes and doubts that arise and how to solve them can be useful for the community
+`r emo::ji("heavy_check_mark")`  Sharing ideas and experiences can be useful for the community
 
 --
 
