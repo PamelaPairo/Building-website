@@ -274,7 +274,7 @@ class: left, bottom, inverse
 
 - [**¿Porqué necesitas tener una página web personal?**](https://pamepairo.netlify.app/post/7-12-2020-motivos-pagina-web/) (and English version)
 
-- [**Creando una página web bilingüe con R**](https://pamepairo.netlify.app/post/7-12-2020-motivos-pagina-web/) (and english version)
+- [**Creando una página web bilingüe con R**](https://pamepairo.netlify.app/post/7-12-2020-motivos-pagina-web/) (and English version)
 
 ---
 class: goodbye-slide, inverse, middle, center
